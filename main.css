@@ -1,0 +1,173 @@
+ @font-face {
+    font-family: vcr;
+    src: url(txt/vcr.woff);
+  }
+
+ @font-face {
+    font-family: SF4;
+    src: url(txt/SSF4.ttf);
+  }
+ @font-face {
+    font-family: viv;
+    src: url(txt/Viv.TTF);
+  }
+
+ @font-face {
+    font-family: miriam;
+    src: url(txt/Miriam.ttf);
+  }
+
+ @font-face {
+    font-family: joru;
+    src: url(txt/Joru.ttf);
+  }
+
+ @font-face {
+    font-family: mask;
+    src: url(txt/Mask.otf);
+  }
+
+ @font-face {
+    font-family: domutan;
+    src: url(txt/Domutan.ttf);
+  }
+
+  body {
+    font-family: 'vcr';
+    background-color:rgb(204, 123, 103);
+    color: white;
+    text-align: center;
+}
+
+#position{
+  position:fixed;
+  z-index: -1;
+  top:0;
+  width:100%;
+    height:150px;
+    background-image:url("img/petals.gif");
+}
+
+
+.bottomnav{
+  height: 20px;
+  z-index: 2;
+  position: fixed;
+  bottom:0;
+}
+
+.bottomnav a {
+  text-decoration: none;
+  font-size: 10px;
+  color: white;
+  display: block;
+  padding-top: 5px;
+}
+
+.bottomnav a:hover {
+  color: #e3fffe;
+}
+
+.sidenav a{
+	color: rgb(204, 123, 103);
+}
+.sidenav {
+  width: 180px;
+  position: fixed;
+  z-index: 6;
+  left: 1%;
+  top:30%;
+  overflow-x: hidden;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 3px solid white;
+  border-radius:8px;
+  background-color:rgb(204, 123, 103);
+}
+
+.sidenav a {
+  padding:auto;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+}
+
+a{
+  color: rgb(204, 123, 103);
+  padding:auto;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+
+a:hover{
+  color: #e3fffe;
+}
+
+
+.sidenav a:hover {
+  color: #e3fffe;
+}
+
+.main {
+  margin-left: 17%; 
+  margin-right: 10%; 
+  font-size: 28px; 
+  padding: 0px 10px;
+  margin-bottom: 50px;
+   border: 3px solid white;
+  border-radius:8px;
+  background-color:rgb(204, 123, 103);
+  z-index:76;
+}
+
+a span{
+  opacity: 0;
+}
+a:hover span{
+  opacity: 1;
+  color: white;
+}
+
+.counter{
+	display: block;
+	margin:auto;
+	padding-bottom: 5px;
+}
+
+#hide{
+  display: none;
+}
+
+.button{
+  border: 3px solid white;
+  border-radius:8px;
+  background-color:rgb(204, 123, 103);
+  color: white;
+  font-family: vcr;
+  padding: 10px;
+}
+
+.marquee {
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+  height: 120px;
+  font-size: 50px;
+  font-family: SF4;
+  overflow-x: hidden;
+  text-shadow: 3px 3px black;
+}
+
+.track {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
